@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
 
 		body {
-  font-family: 'Anton', sans-serif ;
+  font-family: 'Montserrat', sans-serif ;
 }
 .numeri-eventi{
 	font-family: 'Anton', sans-serif ;
@@ -37,7 +37,7 @@ input[type=checkbox] {
   accent-color: #FFE74D;
 }
 .colore-footer{
-	color: black;
+	color: #FFE74D;
 	text-decoration: none !important;
 }
 .colore-footer:hover {
