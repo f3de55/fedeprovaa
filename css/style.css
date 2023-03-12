@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+		body {
+  font-family: 'Montserrat', sans-serif ;
+}
+.numeri-eventi{
+	font-family: 'Anton', sans-serif ;
+	font-size: 50px;
+	color:white;
+	position: absolute;
+  top: 50%;
+	left:90px;
+  margin-top: -25px;
+}
+.descrizione-evento{
+		position: absolute;
+  top: 50%;
+	right: 6px;
+	left: 230px;
+  margin-top: -95px;
+}
+
+html {
+  scroll-behavior: smooth;
+}		
+
+@media screen and (max-width: 600px) {
+	.carousel-item{
+	height: 200px;
+		margin-top: 100px;
+}
+}
+
+
+
+input[type=checkbox] {
+  accent-color: #FFE74D;
+}
+.colore-footer{
+	color: white;
+	text-decoration: none !important;
+}
+.colore-footer:hover {
+    color:#FFE74D !important;
+} 
+.icone-footer:hover {
+	color:#FFE74D !important;
+}
+.immagine-sotto{
+	 position: relative;
+ bottom:100px;
+right: 130px;
+	float: right;
+}
+
+
+ .container#ciao {
+	 overflow: hidden;
+}
+ .container .slider {
+	 animation: slidein 20s linear infinite;
+	 white-space: nowrap;
+}
+ .container .slider .logos {
+	 width: 100%;
+	 display: inline-block;
+	 margin: 0px 0;
+}
+ .container .slider .logos .fab {
+	 width: calc(100% / 5);
+	 animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+ @keyframes slidein {
+	 from {
+		 transform: translate3d(0, 0, 0);
+	}
+	 to {
+		 transform: translate3d(-100%, 0, 0);
+	}
+}
+ @keyframes fade-in {
+	 0% {
+		 opacity: 0;
+	}
+	 100% {
+		 opacity: 1;
+	}
+}
