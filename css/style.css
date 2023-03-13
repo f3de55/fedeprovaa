@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+body {
+     font-family: 'Montserrat', sans-serif ;
+} /* font montserrat*/
+ .numeri-eventi{ /* font e posizione per i numeri presenti nella sezione: programma del festival  */
+     font-family: 'Anton', sans-serif ;
+     font-size: 55px;
+     color:white;
+     position: absolute;
+     top: 50%;
+     left:90px;
+     margin-top: -25px;
+}
+#carouselExampleIndicators4 .carousel-item  img { /* carousel fisso che risolve il problema delle diverse dimensioni delle immagini */
+	object-fit: cover;
+	object-position: center;
+	overflow:hidden;
+	height:75vh;
+
+}
+
+
+.container .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+    height: 450px;
+}
+.container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+   
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.immagine-sfondo{
+	background-image: url(../img/sagoma-pupazzo-sito.png) , url("../img/nastri.png") ;
+
+
+	  background-repeat: no-repeat;
+ background-size: 800px;
+    background-position:bottom right,bottom right;
+	 
+background-attachment: fixed;
+	padding-bottom: 100px;
+	 
+}
+.jumbotron { margin-bottom: 0; }
+.container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+}
+.carousel__img {
+	 width: 100vw;
+	 height: 100vh;
+	 object-fit: cover;
+}
+ .carousel__caption {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+}
+ 
+
+ .descrizione-evento-1{  /* posizione del testo nella sezione programma del festival */
+     position: absolute;
+     top: 50%;
+     right: 70px;
+     left: 260px;
+     margin-top: -100px;
+}
+ .descrizione-evento-2{  /* posizione del testo nella sezione programma del festival */
+     position: absolute;
+     top: 50%;
+     right: 60px;
+     left: 260px;
+     margin-top: 20px;
+}
+ html { /* animazione smooth quando si clicca una voce di menù  */
+     scroll-behavior: smooth;
+}
+
+ input[type=checkbox] { /* colore giallo checkbox */
+     accent-color: #E1D51C;
+}
+ .colore-footer{ /* colore voci di menù footer */
+     color: white;
+     text-decoration: none !important;
+}
+ .colore-footer:hover { /* hover gialla al passaggio del mouse sulle voci di menù */
+     color:#E1D51C !important;
+}
+ .icone-footer:hover { /* hover gialla sulle icone nel footer*/
+     color:#E1D51C !important;
+}
+.icona-eventi{
+	color:#E1D51C !important;
+}
+ .immagine-sotto{ /* posizione dell'immagine dell'omino nella sezione di descrizione del festival */
+     position: relative;
+     bottom:100px;
+     right: 130px;
+     float: right;
+}
+ .omino-tiene{/* posizione dell'immagine dell'omino nella sezione di descrizione del programma del festival */
+     position: relative;
+     bottom:120px;
+     right: 230px;
+     float:left;
+}
+ .container#ciao { /* loghi degli sponsor vengono resi visibili per tutta la lunghezza del container  */
+     overflow: hidden;
+}
+ .container .slider { /* tempo slider sponsor  */
+     animation: slidein 15s linear infinite;
+     white-space: nowrap;
+}
+
+ 
+ @keyframes slidein { /* animazione slider sponsor  */
+     from {
+         transform: translate3d(0, 0, 0);
+    }
+     to {
+         transform: translate3d(-100%, 0, 0);
+    }
+}
+
+ 
